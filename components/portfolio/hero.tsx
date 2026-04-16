@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Github, Linkedin, Mail, Phone, ChevronDown } from "lucide-react"
+import { Github, Linkedin, Mail, ChevronDown } from "lucide-react"
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -77,7 +77,7 @@ export function Hero() {
       >
         <motion.div variants={itemVariants} className="mb-4">
           <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium tracking-wide">
-            Full Stack Developer
+            Full-Stack Software Engineer | Backend & AI Engineer
           </span>
         </motion.div>
 
@@ -85,46 +85,43 @@ export function Hero() {
           variants={itemVariants}
           className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-6 tracking-tight"
         >
-          Abed Alrhman
-          <br />
-          <span className="text-primary">Ahmad</span>
+          Abed Alrhman Ahmad
         </motion.h1>
 
         <motion.p
           variants={itemVariants}
           className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8 leading-relaxed"
         >
-          Computer Science graduate passionate about building efficient, user-centric
-          web applications. I transform complex problems into elegant digital solutions
-          using modern technologies.
+          Building scalable systems, intelligent backend architectures, and AI-powered
+          solutions.
         </motion.p>
 
         <motion.div variants={itemVariants} className="flex flex-wrap gap-4 mb-12">
           <motion.a
-            href="mailto:Abed4alrhmanahamd@gmail.com"
+            href="/cv.pdf"
+            download
             className="group flex items-center gap-2 px-5 py-3 bg-primary text-primary-foreground rounded-lg font-medium transition-all duration-300 hover:scale-105"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
           >
             <Mail className="w-4 h-4" />
-            Get in Touch
+            Download CV
           </motion.a>
           <motion.a
-            href="#projects"
+            href="#hire-me"
             className="flex items-center gap-2 px-5 py-3 border border-border rounded-lg text-foreground font-medium transition-all duration-300 hover:bg-secondary"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
           >
-            View Projects
+            Contact Me
           </motion.a>
         </motion.div>
 
         <motion.div variants={itemVariants} className="flex items-center gap-6">
           {[
-            { icon: Mail, href: "mailto:Abed4alrhmanahamd@gmail.com", label: "Email" },
-            { icon: Phone, href: "tel:+96181121965", label: "Phone" },
-            { icon: Github, href: "https://github.com", label: "GitHub" },
+            { icon: Github, href: "https://github.com/abed4alrhmanahmad", label: "GitHub" },
             { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
+            { icon: Mail, href: "mailto:abed.alrhman.ahmad4@gmail.com", label: "Email" },
           ].map((social, index) => (
             <motion.a
               key={social.label}

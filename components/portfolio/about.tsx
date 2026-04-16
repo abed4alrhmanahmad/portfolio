@@ -15,7 +15,7 @@ const highlights = [
   {
     icon: GraduationCap,
     title: "Education",
-    description: "B.S. in Computer Science from Lebanese International University",
+    description: "B.S. in Computer Science | Lebanese International University | Saida, Lebanon | Oct 2025",
   },
   {
     icon: Target,
@@ -30,7 +30,7 @@ const highlights = [
   {
     icon: Code2,
     title: "Expertise",
-    description: "React, Next.js, Laravel, and cross-platform development",
+    description: "React, Next.js, NestJS, FastAPI, and scalable full-stack architectures",
   },
 ]
 

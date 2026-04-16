@@ -4,20 +4,14 @@ import React from "react"
 
 import { motion, useInView } from "framer-motion"
 import { useRef, useState } from "react"
-import { Mail, Phone, MapPin, Send, Github, Linkedin, ArrowUpRight } from "lucide-react"
+import { Mail, MapPin, Send, Github, Linkedin, ArrowUpRight } from "lucide-react"
 
 const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "Abed4alrhmanahamd@gmail.com",
-    href: "mailto:Abed4alrhmanahamd@gmail.com",
-  },
-  {
-    icon: Phone,
-    label: "Phone",
-    value: "+961 81 121 965",
-    href: "tel:+96181121965",
+    value: "abed.alrhman.ahmad4@gmail.com",
+    href: "mailto:abed.alrhman.ahmad4@gmail.com",
   },
   {
     icon: MapPin,
@@ -28,9 +22,8 @@ const contactInfo = [
 ]
 
 const socials = [
-  { icon: Github, label: "GitHub", href: "https://github.com" },
+  { icon: Github, label: "GitHub", href: "https://github.com/abed4alrhmanahmad" },
   { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com" },
-  { icon: Mail, label: "Email", href: "mailto:Abed4alrhmanahamd@gmail.com" },
 ]
 
 export function Contact() {
@@ -54,7 +47,7 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="py-24 md:py-32 px-6 md:px-12 lg:px-24" ref={ref}>
+    <section id="hire-me" className="py-24 md:py-32 px-6 md:px-12 lg:px-24" ref={ref}>
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -68,7 +61,7 @@ export function Contact() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ delay: 0.2 }}
           >
-            Get In Touch
+            Hire Me
           </motion.span>
           <motion.h2
             className="text-4xl md:text-5xl font-bold text-foreground mb-6"
@@ -76,7 +69,7 @@ export function Contact() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.3 }}
           >
-            Let&apos;s Work
+            Let&apos;s Build
             <br />
             <span className="text-primary">Together</span>
           </motion.h2>
@@ -86,8 +79,7 @@ export function Contact() {
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ delay: 0.4 }}
           >
-            I&apos;m currently open to new opportunities and collaborations. Whether you have
-            a project in mind or just want to connect, I&apos;d love to hear from you.
+            Let&apos;s work together on building scalable and impactful software solutions.
           </motion.p>
         </motion.div>
 

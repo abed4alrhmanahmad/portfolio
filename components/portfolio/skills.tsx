@@ -5,50 +5,86 @@ import { useRef } from "react"
 
 const skillCategories = [
   {
-    title: "Frontend",
+    title: "Backend Development",
     skills: [
-      { name: "React", level: 90 },
-      { name: "Next.js", level: 85 },
-      { name: "JavaScript", level: 90 },
-      { name: "HTML/CSS", level: 95 },
-      { name: "Flutter", level: 75 },
-    ],
-  },
-  {
-    title: "Backend",
-    skills: [
+      { name: "Node.js", level: 92 },
+      { name: "NestJS", level: 90 },
+      { name: "FastAPI", level: 90 },
+      { name: "Django", level: 86 },
+      { name: "Express.js", level: 88 },
       { name: "Laravel", level: 85 },
-      { name: "PHP", level: 85 },
-      { name: "Python", level: 80 },
-      { name: "Java", level: 75 },
-      { name: "Node.js", level: 70 },
     ],
   },
   {
-    title: "Database & Tools",
+    title: "Frontend Development",
     skills: [
-      { name: "PostgreSQL", level: 85 },
-      { name: "MS SQL Server", level: 80 },
-      { name: "Git", level: 90 },
-      { name: "VS Code", level: 95 },
-      { name: "pgAdmin", level: 80 },
+      { name: "React", level: 92 },
+      { name: "Next.js", level: 90 },
+      { name: "HTML", level: 95 },
+      { name: "Tailwind CSS", level: 92 },
+    ],
+  },
+  {
+    title: "AI & Machine Learning Systems",
+    skills: [
+      { name: "RAG", level: 86 },
+      { name: "LangChain", level: 84 },
+      { name: "AI Agents", level: 87 },
+      { name: "MCP", level: 82 },
+      { name: "Prompt Engineering", level: 89 },
+    ],
+  },
+  {
+    title: "Databases",
+    skills: [
+      { name: "MongoDB", level: 90 },
+      { name: "PostgreSQL", level: 90 },
+      { name: "MySQL", level: 88 },
+      { name: "Supabase", level: 82 },
+    ],
+  },
+  {
+    title: "Languages & Tools",
+    skills: [
+      { name: "Python", level: 92 },
+      { name: "JavaScript", level: 92 },
+      { name: "TypeScript", level: 90 },
+      { name: "PHP", level: 85 },
+      { name: "SQL", level: 90 },
+      { name: "Java", level: 80 },
     ],
   },
 ]
 
 const techStack = [
+  "Node.js",
+  "Express.js",
+  "FastAPI",
+  "NestJS",
+  "Django",
+  "Laravel",
   "React",
   "Next.js",
-  "Laravel",
-  "Flutter",
-  "Python",
-  "Java",
-  "JavaScript",
-  "PostgreSQL",
-  "Git",
   "HTML",
-  "CSS",
+  "Tailwind CSS",
+  "Python",
+  "JavaScript",
+  "TypeScript",
   "PHP",
+  "SQL",
+  "Java",
+  "RAG",
+  "LangChain",
+  "AI Agents",
+  "MCP",
+  "Prompt Engineering",
+  "MongoDB",
+  "PostgreSQL",
+  "MySQL",
+  "Supabase",
+  "Git",
+  "Postman",
+  "Jira",
 ]
 
 export function Skills() {
@@ -160,18 +196,17 @@ export function Skills() {
           transition={{ delay: 0.9 }}
         >
           <h3 className="text-xl font-semibold text-foreground mb-6">
-            Soft Skills & Languages
+            Strengths
           </h3>
           <div className="flex flex-wrap gap-3">
             {[
-              "Communication",
-              "Teamwork",
-              "Adaptability",
-              "Time Management",
-              "Fast Learning",
               "Problem Solving",
-              "Arabic (Native)",
-              "English (Fluent)",
+              "System Design Thinking",
+              "Scalable Architecture Design",
+              "API Development",
+              "Fast Learner",
+              "Clean Code",
+              "Team Collaboration (Agile / Scrum)",
             ].map((skill, index) => (
               <motion.span
                 key={skill}

@@ -6,68 +6,112 @@ import { ExternalLink, Github, Car, Database, Shield, Layout } from "lucide-reac
 
 const projects = [
   {
-    title: "AutoAnkaufAdel",
-    subtitle: "Used Car Buying Platform",
+    title: "UNRWA - The Digital Hub | 3D E-Commerce Box Project",
+    subtitle: "Interactive 3D Shopping Experience",
     description:
-      "A comprehensive web-based system for purchasing used cars through an online submission process. Features vehicle listing with model, year, mileage, condition, and location data.",
+      "Created an interactive 3D shopping experience with drag-and-drop product placement using Three.js.",
     features: [
-      "Vehicle listing with comprehensive details",
-      "Admin workflow for reviewing submissions",
-      "Offer management system",
-      "User-friendly submission process",
+      "Drag-and-drop product placement in 3D scenes",
+      "Optimized rendering performance for smooth interaction",
+      "Responsive behavior for cross-device usage",
+      "Immersive product visualization flow for engagement",
     ],
-    tech: ["React", "Laravel", "PostgreSQL", "Tailwind CSS"],
-    icon: Car,
+    tech: ["React", "Next.js", "Three.js", "TypeScript"],
+    icon: Layout,
     color: "from-cyan-500/20 to-teal-500/20",
-    highlights: ["Usability", "Transparency", "Efficiency"],
+    highlights: ["3D UI", "Performance", "Responsive"],
+    github: "https://github.com/abed4alrhmanahmad",
+    live: "https://github.com/abed4alrhmanahmad",
   },
   {
-    title: "Inventory Management System",
-    subtitle: "Warehouse Operations Tool",
+    title: "Warehouse & Branch Management Platform",
+    subtitle: "Real-Time Sync and AI Analytics",
     description:
-      "Built during warehouse operations experience to track inventory movement, analyze historical data, and support demand forecasting to reduce shortages and overstock.",
+      "Built an integrated system connecting warehouses and branches with real-time synchronization and automated workflows.",
     features: [
-      "Real-time inventory tracking",
-      "Historical data analysis",
-      "Demand forecasting algorithms",
-      "Stock organization tools",
+      "Real-time synchronization across warehouses and branches",
+      "AI-powered forecasting and analytics for inventory planning",
+      "Automated workflows for operations and stock handling",
+      "Monitoring dashboards for stock movement and system activity",
     ],
-    tech: ["Python", "PostgreSQL", "Data Analysis", "Excel"],
+    tech: ["React", "FastAPI", "MySQL", "AI Analytics"],
     icon: Database,
     color: "from-blue-500/20 to-indigo-500/20",
-    highlights: ["Analytics", "Forecasting", "Optimization"],
+    highlights: ["Real-Time", "AI Forecasting", "Automation"],
+    github: "https://github.com/abed4alrhmanahmad/warehouse",
+    live: "https://github.com/abed4alrhmanahmad/warehouse",
   },
   {
-    title: "System Administration Suite",
-    subtitle: "Network & Server Management",
+    title: "Nutrition CMS System",
+    subtitle: "Role-Based Content Management",
     description:
-      "Comprehensive tools developed during System and Network Administration coursework for managing Windows servers and network infrastructure.",
+      "Content management system with role-based authentication, admin dashboard, and dynamic content handling.",
     features: [
-      "Server monitoring dashboard",
-      "Network configuration tools",
-      "User access management",
-      "Security audit logging",
+      "Role-based authentication",
+      "Admin dashboard and controls",
+      "Dynamic content publishing",
+      "Structured CMS workflows",
     ],
-    tech: ["Windows Server", "PowerShell", "Networking", "Security"],
+    tech: ["Next.js", "TypeScript", "MongoDB"],
     icon: Shield,
     color: "from-emerald-500/20 to-green-500/20",
-    highlights: ["Security", "Monitoring", "Administration"],
+    highlights: ["CMS", "Auth", "Dynamic Content"],
+    github: "https://github.com/abed4alrhmanahmad/nutrition",
+    live: "https://github.com/abed4alrhmanahmad/nutrition",
   },
   {
-    title: "Portfolio Website",
-    subtitle: "Personal Brand Showcase",
+    title: "Gym Management System",
+    subtitle: "Secure Gym Operations Platform",
     description:
-      "Modern, animated portfolio website showcasing skills and projects. Built with Next.js and featuring smooth animations and responsive design.",
+      "Role-based gym management system with authentication, analytics dashboards, and secure API architecture.",
     features: [
-      "Smooth scroll animations",
-      "Responsive design",
-      "Dark theme optimized",
-      "Performance focused",
+      "Role-based access control",
+      "Authentication and secure API flows",
+      "Analytics dashboards for operations",
+      "Modular management workflows",
     ],
-    tech: ["Next.js", "React", "Framer Motion", "Tailwind CSS"],
-    icon: Layout,
+    tech: ["React", "FastAPI", "MySQL"],
+    icon: Shield,
     color: "from-violet-500/20 to-purple-500/20",
-    highlights: ["Modern", "Animated", "Responsive"],
+    highlights: ["Auth", "Dashboards", "Secure API"],
+    github: "https://github.com/abed4alrhmanahmad/fitzone",
+    live: "https://github.com/abed4alrhmanahmad/fitzone",
+  },
+  {
+    title: "Gym App (Vue 3)",
+    subtitle: "Membership & Booking App",
+    description:
+      "Fitness booking and membership system with modular architecture and reusable Vue components.",
+    features: [
+      "Fitness booking workflows",
+      "Membership lifecycle management",
+      "Reusable Vue component architecture",
+      "Modular frontend structure",
+    ],
+    tech: ["Vue 3", "Vite"],
+    icon: Layout,
+    color: "from-amber-500/20 to-orange-500/20",
+    highlights: ["Vue 3", "Modular", "Reusable Components"],
+    github: "https://github.com/abed4alrhmanahmad/Gym",
+    live: "https://github.com/abed4alrhmanahmad/Gym",
+  },
+  {
+    title: "AutoankaufAdel Website",
+    subtitle: "Live Production Car Buying Platform",
+    description:
+      "Live production car buying platform for Germany with SEO optimization and secure backend integration.",
+    features: [
+      "Production-ready lead generation flow",
+      "SEO-focused information architecture",
+      "Secure backend integration",
+      "Performance-oriented deployment",
+    ],
+    tech: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+    icon: Car,
+    color: "from-rose-500/20 to-red-500/20",
+    highlights: ["Production", "SEO", "Backend Integration"],
+    github: "https://github.com/abed4alrhmanahmad",
+    live: "https://autoankaufadel.de/",
   },
 ]
 
@@ -149,7 +193,9 @@ export function Projects() {
                     </motion.div>
                     <div className="flex gap-3">
                       <motion.a
-                        href="#"
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="p-2 rounded-lg bg-secondary text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors"
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
@@ -158,7 +204,9 @@ export function Projects() {
                         <Github className="w-5 h-5" />
                       </motion.a>
                       <motion.a
-                        href="#"
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="p-2 rounded-lg bg-secondary text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors"
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
@@ -234,7 +282,7 @@ export function Projects() {
           transition={{ delay: 1.2 }}
         >
           <motion.a
-            href="https://github.com"
+            href="https://github.com/abed4alrhmanahmad"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 border border-border rounded-lg text-foreground font-medium hover:border-primary hover:text-primary transition-all"

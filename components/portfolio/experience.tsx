@@ -2,45 +2,43 @@
 
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
-import { Briefcase, BookOpen, Award } from "lucide-react"
+import { Briefcase, Award } from "lucide-react"
 
 const experiences = [
   {
     icon: Briefcase,
-    title: "Warehouse Operations & Forecasting",
-    company: "Professional Experience",
-    period: "Real-world Application",
+    title: "Full Stack Web Development Intern",
+    company: "UNRWA (The Digital Hub)",
+    period: "Jan 2026 - May 2026",
     description: [
-      "Solved daily operational and system-related issues in a warehouse environment",
-      "Analyzed inventory movement and historical data to support basic warehouse demand forecasting",
-      "Assisted in estimating future stock needs to reduce shortages and overstock",
-      "Improved workflow efficiency through better stock organization and tracking methods",
-      "Developed strong analytical thinking and responsibility under real operational pressure",
+      "Developed full-stack web applications using React, Next.js, and NestJS with JavaScript/TypeScript, and built backend services and data processing modules using Python (FastAPI/Django)",
+      "Designed and managed databases using MongoDB, PostgreSQL, and MySQL, and developed RESTful APIs using Express.js, FastAPI, and Fastify",
+      "Implemented authentication systems and handled full-stack integration across MERN and Python-based architectures",
+      "Applied clean code practices, SOLID principles, and design patterns for scalable and maintainable applications",
+      "Collaborated using Git, GitHub pull requests, and Jira within Agile/Scrum workflows, and deployed apps on Vercel and Render with basic CI/CD pipelines",
     ],
-    skills: ["Data Analysis", "Problem Solving", "Operations Management", "Forecasting"],
+    skills: ["React", "Next.js", "NestJS", "FastAPI", "Django", "MongoDB", "PostgreSQL", "MySQL"],
   },
   {
-    icon: BookOpen,
-    title: "B.S. in Computer Science",
-    company: "Lebanese International University",
-    period: "Graduate | GPA: 3.77/4.00",
+    icon: Briefcase,
+    title: "Freelance Full-Stack Developer",
+    company: "AutoankaufAdel",
+    period: "Nov 2025",
     description: [
-      "Completed comprehensive coursework in modern software development",
-      "Specialized studies in Robotics and Designs",
-      "Advanced training in System and Network Administration",
-      "Machine Learning fundamentals and applications",
+      "Designed and deployed a full-stack lead generation platform with a scalable backend and dynamic workflows",
+      "Managed production deployment, SEO optimization, and API development to improve performance and user acquisition",
     ],
-    skills: ["Robotics", "System Administration", "Machine Learning", "Computer Science"],
+    skills: ["Full-Stack Development", "SEO", "API Development", "Deployment"],
   },
 ]
 
 const coursework = [
-  "Robotics and Designs",
-  "System and Network Administration",
-  "Machine Learning",
-  "Data Structures",
-  "Algorithms",
-  "Database Systems",
+  "B.S. in Computer Science",
+  "Lebanese International University",
+  "Saida, Lebanon",
+  "Oct 2025",
+  "Software Engineering",
+  "Data Structures & Algorithms",
 ]
 
 export function Experience() {
@@ -186,7 +184,7 @@ export function Experience() {
           <div className="flex items-center gap-3 mb-6">
             <Award className="w-6 h-6 text-primary" />
             <h3 className="text-xl font-semibold text-foreground">
-              Relevant Coursework
+              Education
             </h3>
           </div>
           <div className="flex flex-wrap gap-3">
